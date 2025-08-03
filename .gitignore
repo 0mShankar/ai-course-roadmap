@@ -1,0 +1,19 @@
+# React (frontend)
+frontend/node_modules/
+frontend/build/
+
+# Python (backend)
+backend/venv/
+backend/env/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+
+# Common (for both)
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+
+backend/.env
