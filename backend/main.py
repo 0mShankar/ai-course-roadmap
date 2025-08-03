@@ -9,8 +9,8 @@ from course.routes import router as course_router
 app = FastAPI()
 
 origins = [
-    "http://localhost:3000",  # frontend dev server
-    # You can add more domains here if needed
+    "http://localhost:3000",
+    "https://ai-course-roadmap.onrender.com"
 ]
 
 app.add_middleware(
@@ -27,6 +27,3 @@ app.include_router(youtube_router)
 app.include_router(articles_router) 
 app.include_router(course_router)
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=10000)
