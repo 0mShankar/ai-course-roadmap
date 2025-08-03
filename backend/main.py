@@ -10,7 +10,8 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
-    "https://ai-course-roadmap.onrender.com"
+    "https://ai-course-roadmap.onrender.com",
+    "https://ai-course-roadmap-frontend.onrender.com"
 ]
 
 app.add_middleware(
